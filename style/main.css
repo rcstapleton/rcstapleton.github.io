@@ -1,0 +1,301 @@
+html
+{
+	background-color: #3462ad;
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+
+html body
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+#banner
+{
+    width: 100%;
+    height:50px;
+    background-color: white;  
+}
+#banner img
+{
+    width:100px;
+    height:50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** 
+**
+Site Nav
+**
+**/
+#site-navbar
+{
+
+
+    border: 1px solid;
+}
+
+#site-navbar ul
+{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3462ad;
+}
+
+#site-navbar li
+{
+    margin-left: 24%;
+}
+
+#site-navbar li a
+{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font: normal 100% arial, sans-serif;
+
+}
+
+#site-navbar li a:hover, #site-navbar li.selected a
+{
+    color: black;
+    background: #2c518e;
+}
+
+
+
+/** 
+**
+Page Nav
+**
+**/
+.page-navbar
+{       
+    margin-top: -7px;
+}
+
+.page-navbar ul
+{
+    height: 30px;
+    width: 60%;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3462ad;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-top: 1px solid;
+}
+
+.page-navbar li a
+{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font: normal 75% arial, sans-serif;
+}
+
+.page-navbar li a:hover
+{
+    color: black;
+    background: #2c518e;
+}
+
+
+.item-list
+{
+    width: 45%;
+    float: none;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 18px;
+}
+.item-list li
+{
+    padding: 5px;
+}
+
+
+#news
+{
+    width: 60%;
+    height:200px;
+    border: 1px solid;
+    float: none;
+    margin: 0 auto;
+}
+
+
+
+#main-content
+{
+    width: 80%;
+    float: none; 
+    margin: 0 auto;
+    overflow: hidden;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 5px;
+    background-color: #6985b2;
+    text-align: center;
+    padding: 0%;
+}
+
+#main-content p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;    
+}
+
+
+#colored-text
+{
+    background-color: #01183d;
+    width: 425px;
+    height: 225px;
+    border-radius: 25px;
+    padding: 20px;
+    float: none;
+    margin: 0 auto;
+    overflow: visible;
+}
+#colored-text p
+{
+    font-size: 40px;
+    display: inline;
+}
+
+
+#page-footer
+{
+    height: 10px;
+    margin-top: -6px;
+	clear: both;
+	text-align: center;
+	font-size: large;
+	padding: 0.3em;		
+	background: #3462ad;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+
+
+
+
+/**
+**
+News Slide Show
+**
+**/
+
+
+
+/* Slideshow container */
+.slideshow-container 
+{
+    position: relative;
+    background: #d0d3ea;
+    width: 60%;
+    float: none;
+    margin: 0 auto;
+}
+
+/* Slides */
+.mySlides
+{
+    margin-top: -18px;
+    display: none;            
+    padding: 80px;
+
+}
+.mySlides h1     
+{    
+    margin-top: -80px;
+    color: cornflowerblue;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next 
+{ 
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;          
+}
+
+.prev
+{
+    left: 0;  
+}
+            
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover
+{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container
+{
+    text-align: center;
+    padding: 20px;
+    background: #3462ad;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+
+/* The dots/bullets/indicators */
+.dot
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover
+{
+    background-color: #717171;
+}
+
