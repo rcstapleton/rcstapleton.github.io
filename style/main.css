@@ -27,18 +27,15 @@ html body
 Site Nav
 **
 **/
-#site-navbar
-{
-
-}
-
 #site-navbar ul
 {
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    background: rgba(50, 50, 150, 0.8);
+    background-image: radial-gradient(black, black, navy, black, navy);
+    border: 1px solid;
+    border-color: navy;
 }
 
 #site-navbar li
@@ -59,8 +56,8 @@ Site Nav
 }
 #site-navbar li a:hover, #site-navbar li.selected a
 {
-    color: black;
-    background: #2c518e;
+    color: darkslategray;
+    background: rgba(35, 35, 85, 0.3);
 }
 
 /** 
@@ -70,7 +67,7 @@ Page Nav
 **/
 .page-navbar
 {       
-    margin-top: -2px;
+    margin-top: -3px;
 }
 
 .page-navbar ul
@@ -81,7 +78,10 @@ Page Nav
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    background: rgba(67, 67, 150, 0.8);
+    background-image: radial-gradient(black, black, navy, black, navy);
+    border: 1px solid;
+    border-color: navy;
+    border-radius: 25px;
 }
 .page-navbar li a
 {
@@ -95,8 +95,9 @@ Page Nav
 }
 .page-navbar li a:hover
 {
-    color: black;
-    background: #2c518e;
+    color: darkslategray;
+    background: rgba(35, 35, 85, 0.3);
+    border-radius: 25px;
 }
 
 /**
@@ -127,22 +128,24 @@ Body of page
 #main-content
 {
 
+    width: 80%;
     float: none; 
     margin: 0 auto;
     overflow: hidden;
-    border-left: 1px solid;
-    border-right: 1px solid;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-color: navy;
     padding: 5px;
-    background-color: black;
     text-align: center;
     padding: 0%;
-    background: rgba(125, 125, 200, 0.8);
+    background: rgba(200, 200, 250, 0.9);
 }
 
 #main-content p
 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;    
+    font-size: 25px;    
+    color: black;
 }
 
 
@@ -181,7 +184,9 @@ Footer
 	text-align: center;
 	font-size: large;
 	padding: 0.3em;		
-    background: rgba(50, 50, 150, 0.8);
+    background-image: radial-gradient(black, black, navy, black, navy);    
+    border: 1px solid;
+    border-color: navy;
 }
 
 /**
@@ -206,12 +211,15 @@ News Slide Show
     width: 60%;
     float: none;
     margin: 0 auto;
+    border-radius: 25px;
+    border: 1px solid;
+    background: rgba(200, 200, 250, 0.8);
 }
 
 /* Slides */
 .mySlides
 {
-    margin-top: -18px;
+    
     display: none;            
     padding: 80px;
 
@@ -219,7 +227,6 @@ News Slide Show
 .mySlides h1     
 {    
     margin-top: -80px;
-    color: cornflowerblue;
     text-align: center;
 }
 
@@ -262,11 +269,17 @@ News Slide Show
 /* The dot/bullet/indicator container */
 .dot-container
 {
+    width: 30%;
+    float: none;
+    margin: auto;
     text-align: center;
     padding: 20px;
     background: #3462ad;
     border-bottom: 1px solid;
     border-top: 1px solid;
+    border-radius: 25px;
+    background: rgba(200, 200, 250, 0.8);
+    
 }
 
 /* The dots/bullets/indicators */
@@ -286,4 +299,58 @@ News Slide Show
 .active, .dot:hover
 {
     background-color: #717171;
+}
+
+
+
+
+
+
+
+
+
+.rainbow {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 45s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 45s infinite;
+    
+  /* Standar Syntax */
+  animation: rainbow 45s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}	
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow
+{
+    0%{color: orange;}	
+    10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}	
+}
+
+/* Standar Syntax */
+@keyframes rainbow
+{
+    0%{color: orange;}	
+    10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}
 }
