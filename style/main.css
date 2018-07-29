@@ -1,8 +1,7 @@
 html
 {
 
-    background: url(../art/backgrounds/background.jpg);
-    background-attachment: fixed;
+    background: url(../art/backgrounds/background.jpg) no-repeat center center fixed;
     background-color: #cccccc;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -40,7 +39,7 @@ Site Nav
 
 #site-navbar li
 {
-    margin-left: 24%;
+    margin-left: 25%;
 }
 
 #site-navbar li a
@@ -112,11 +111,12 @@ Bullet points
     float: none;
     margin: 0 auto;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
+    letter-spacing: 0.2px;
 }
 .item-list li
 {
-    padding: 5px;
+    padding: 15px;
 }
 
 /**
@@ -144,7 +144,7 @@ Body of page
 #main-content p
 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;    
+    font-size: 20px;    
     color: black;
 }
 
