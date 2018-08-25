@@ -88,7 +88,6 @@ Page Nav
 .page-navbar ul
 {
     height: 30px;
-    width: 60%;
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
@@ -192,7 +191,7 @@ Footer
 **/
 #page-footer
 {
-    height: 35px;
+    height: 25px;
 	clear: both;
 	text-align: center;
 	font-size: large;
@@ -202,8 +201,8 @@ Footer
 
 #page-footer p
 {
-    color: gray;
-    margin-top: 6px;
+    color: darkblue;
+    margin-top: 4px;
 }
 
 /**
