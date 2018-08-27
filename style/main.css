@@ -29,13 +29,35 @@ h3
     font-size: 25px;
 }
 
+p
+{
+    font-size: 25px;    
+    color: black;
+}
+
+
+.posted
+{
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
 .icon img
 {
     background-color: white;
     width:500px;
     height:200px;
     border: 1px solid;
+    border-radius: 25px;
+}
 
+#years30
+{    
+    width:200px;
+    height:200px;
+    border: 1px solid;
+    border-radius: 25px;
 }
 
 /** 
@@ -154,13 +176,6 @@ Body of page
     background: rgba(200, 200, 250, 0.9);
 }
 
-#main-content p
-{
-    font-size: 25px;    
-    color: black;
-}
-
-
 /**
 **
 Colored text
@@ -191,7 +206,7 @@ Footer
 **/
 #page-footer
 {
-    height: 25px;
+    height: 28px;
 	clear: both;
 	text-align: center;
 	font-size: large;
@@ -316,13 +331,6 @@ News Slide Show
 {
     background-color: #717171;
 }
-
-
-
-
-
-
-
 
 
 .rainbow {
