@@ -1,0 +1,351 @@
+	/*
+		Author:				HCLC
+		Date:				1/1/2019
+	*/
+
+body { 
+    margin: 0; /* Sets the defualt margin to 0 */
+}
+
+p {
+    color: black; /* Sets the p text color */
+    font-size: 25px; /* sets the p text font size */
+}
+
+hr { 
+     
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: black;
+} 
+
+#left-pane {
+    float: left; /* floats the pane to the left */
+    width: 15%; /* sets the width of the pane */
+    background-color: #00112d; /* sets the background color of the pane */
+    position: fixed; /* sets the position of the pane to fixed */
+    height: 100%; /* sets the height of the pane */
+    border-right: 5px solid black; /* adds a border to the pane */
+
+}
+
+#right-pane {
+    float: right; /* floats the pane to the right */
+    width: 85%; /* sets the width of the pane */
+    height: 100%; /* sets the height of the pane */
+    overflow: hidden; /* Sets the overflow to hidden */
+    background: url(../art/backgrounds/mainbackground2.jpg) no-repeat center center fixed;
+    background-color: #cccccc;
+	background-size: cover;
+	-webkit-background-size: cover;
+
+}
+
+#banner {
+    text-align: center; /* centers the text in the banner */
+    background: rgba(10, 10, 40, 0.97);
+    width: 100%; /* sets the width of the banner */
+    margin-top: -25px; /* changes the margin of the banner to make it fit at the top */
+    border-radius: 20px; /* sets a border radius for the banner */
+    border: 2px solid black; /* sets border for the banner*/
+    height: 70px
+    
+}
+
+#banner h1 {
+    margin-top: 27px; /* sets a margin for the h1 in the banner so it fits better */
+    color: white; /* sets the banner text h1 color */
+    text-align:
+}
+
+
+#icon {
+    padding-top: 3%; /* positions the icon */
+    padding-left: 5%; /* positions the icon */
+}
+
+#icon img {
+    width: 93%; /* sets the width of the icon */
+    display: block; /* sets the display of the icon to block level */
+             
+}
+
+#content {
+    width: 60%; /* sets a width for the content */
+    margin-left: 20%; /* sets the margin for the content to get it midscreen */
+    text-align: center; /* centers the content text */
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-left: 5px solid;
+    border-right: 5px solid;   
+    background: url(../art/backgrounds/scrollbackground1.jpg) no-repeat center center fixed;
+    background-color: #cccccc;
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+
+#content p {
+    margin-bottom: 5px; /* positions the content p slightly up */
+}
+
+nav {
+    text-align: center; /* sets the text to the center in the nav bar */
+    margin-top: 15%; /* lowers the nav bar */
+    overflow: auto; /* sets the overflow */
+    color: white; /* sets the nav intro text color */
+}
+
+nav a {
+    font-size: 175%; /* sets the nav bar font size */
+    display: block; /* sets the display to block level */
+    color: lightgray; /* sets the nav bar links text color */
+    padding: 8px 16px; /* spaces out the nav bar text */
+    text-decoration: none; /* removes the lines from the nav bar text */
+}
+
+nav a.active {
+    background-color: #001f54; /* sets the background color of the active lnk */
+    color: white; /* sets the color of the active link */
+}
+
+nav a:hover:not(.active) {
+    background-color: #001f54; /* sets the background color of the hover */
+    color: white; /* sets the text color of the hover */
+}
+
+footer {
+    font-size: 20px; /* set the font size for the footer */
+    width: 100%; /* sets the width of the footer */
+    background: rgba(10, 10, 40, 0.97);
+    color: white; /* sets the text color of the footer */
+    text-align: center; /* centers the text of the footer */
+    border: 2px solid black; /* sets a border for the footer */
+}
+
+
+/********************* 1 *********************/
+
+/**
+**
+Colored text
+**
+**/
+#colored-text
+{
+    background-color: #01183d;
+    width: 60%;
+    height: 225px;
+    border-radius: 25px;
+    padding: 20px;
+    float: none;
+    margin: 0 auto;
+    overflow: visible;
+}
+#colored-text p
+{
+    font-size: 40px;
+    display: inline;
+}
+
+
+
+.item-list
+{
+    width: 45%;
+    float: none;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+.item-list li
+{
+    padding: 15px;
+}
+
+
+.posted
+{
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#years30
+{    
+    width:200px;
+    height:200px;
+    border: 1px solid;
+    border-radius: 25px;
+}
+
+
+
+
+/********************* 2 *********************/
+
+.rainbow {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 45s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 45s infinite;
+    
+  /* Standar Syntax */
+  animation: rainbow 45s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}	
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow
+{
+    0%{color: orange;}	
+    10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}	
+}
+
+/* Standar Syntax */
+@keyframes rainbow
+{
+    0%{color: orange;}	
+    10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	100%{color: blue;}
+	100%{color: orange;}
+}
+
+/********************* 3 *********************/
+
+
+
+/**
+**
+News Slide Show
+**
+**/
+#news
+{
+    width: 60%;
+    height:200px;
+    border: 1px solid;
+    float: none;
+    margin: 0 auto;
+}
+
+/* Slideshow container */
+.slideshow-container 
+{
+    position: relative;
+    background: #d0d3ea;
+    width: 60%;
+    float: none;
+    margin: 0 auto;
+    border-radius: 25px;
+    border: 1px solid;
+    background: rgba(10, 10, 10, 0.2);
+}
+
+/* Slides */
+.mySlides
+{
+    
+    display: none;            
+    padding: 80px;
+
+}
+.mySlides h1     
+{    
+    margin-top: -80px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next 
+{ 
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;          
+}
+
+.prev
+{
+    left: 0;  
+}        
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover
+{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container
+{
+    width: 30%;
+    float: none;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-radius: 25px;
+    background: rgba(10, 10, 10, 0.2);
+    
+}
+
+/* The dots/bullets/indicators */
+.dot
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover
+{
+    background-color: #717171;
+}

@@ -176,6 +176,40 @@ Body of page
     background: rgba(200, 200, 250, 0.9);
 }
 
+
+.leadership
+{
+    overflow-x: hidden;
+    overflow: hidden;
+}
+.info
+{
+    
+
+    margin-top: -26px;
+    float: left;
+    width: 20%;
+    
+    display: inline-block
+}
+.respons
+{  
+
+    margin-left: -100px;
+    margin-top: 25px;
+    width: 35%;
+    display: inline-block
+
+}
+
+.bio
+{
+    margin-left: 20px;
+    margin-top: 25px;
+    width: 35%;
+    display: inline-block
+}
+
 /**
 **
 Colored text
