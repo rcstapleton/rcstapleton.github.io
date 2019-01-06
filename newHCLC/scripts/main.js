@@ -1,4 +1,4 @@
-
+/********************* New Slide *********************/
 var slideIndex = 1;
 
 function plusSlides(n)
@@ -54,4 +54,10 @@ function carousel()
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
+}
+
+/********************* Donate *********************/
+function openWin()
+{
+  window.open("https://www.paypal.com/us/home");
 }

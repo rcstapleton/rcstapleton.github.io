@@ -128,6 +128,83 @@ footer {
 }
 
 
+/********************* Donate *********************/
+
+#donatebutton input[type=button] {
+    width: 50%;
+    font-size: 25px;
+    background-color: #00112d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    
+#donatebutton input[type=button]:hover {
+    background-color: #001f54;
+}
+
+/********************* Volunteer *********************/
+
+    
+#emailform input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;  
+}
+
+    
+#emailform input[type=submit] {
+    width: 25%;
+    background-color: #00112d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    
+#emailform input[type=submit]:hover {
+    background-color: #001f54;
+}
+
+    
+#emailform {
+    border-radius: 5px;
+    padding: 20px;   
+}
+
+    
+#emailform input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#emailform textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
 /********************* 1 *********************/
 
 /**
@@ -151,8 +228,6 @@ Colored text
     font-size: 40px;
     display: inline;
 }
-
-
 
 .item-list
 {
