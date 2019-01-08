@@ -1,4 +1,4 @@
-/********************* New Slide *********************/
+/********************* News Slide *********************/
 var slideIndex = 1;
 
 function plusSlides(n)
