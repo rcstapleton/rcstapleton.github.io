@@ -67,7 +67,9 @@
                 <hr>
                 <h1>Volunteer Form</h1>
                 <hr>
-                <form action="mailto:someone@example.com" method="post" enctype="text/plain" id="emailform">
+                
+                
+                <form class="gform" method="post" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbx8rFR_Dc7vDvi7Wat2TkuY9vvzXdFSFReUFwrEjA/exec">
                     <p>First Name:</p>
                     <input type="text" name="firstname" placeholder="Enter your First Name"><br>
                    <p>Last Name:</p>
@@ -75,10 +77,13 @@
                     <p>Phone Number:</p>
                     <input type="text" name="phonenumber" placeholder="Enter your Phone#"><br>
                     <p>E-Mail:</p>
-                    <input type="email" name="email" placeholder="Enter your E-Mail"><br>
+                    <input type="text" name="email" placeholder="Enter your E-Mail"><br>
                     <p>Comment:</p>
-                    <textarea rows="20" cols="50" name="comment" form="emailform" placeholder="Tell us about yourself..."></textarea><br>
-                    <input type="submit" value="Send" alt="Send">  
+                    
+                    <!--<textarea rows="20" cols="50" name="comment" form="emailform" placeholder="Tell us about yourself..."></textarea><br>
+                    <input type="submit" value="Send" alt="Send">  -->
+                    
+                    
                 </form>
                 
                 <p>Thank you for taking the time to fill out this form. We appreciate your desire to help build a stronger community and workforce. We will review your infomation and contact you as soon as possible.</p>
