@@ -70,47 +70,31 @@
                 
                 
                 <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbw38ahY8TZjENrGLNKroyrHBdT6GowCOTQmHD6vI8mLDLcLPN4/exec">
-                             
-                    <fieldset>                    
+
+                     
+                    <div class="volunteerform">
                         <label for="firstname">First Name: </label>
-                        <input id="firstname" name="firstname" placeholder="Enter your First Name"/> 
-                    </fieldset>
- 
-                    <fieldset>
-                        <label for="lastname">Last Name: </label>
-                        <input id="lastname" name="lastname" placeholder="Enter your Last Name"/>                       
-                    </fieldset>
-                        
-                    <fieldset>
+                        <input type="text" name="firstname" placeholder="Enter your First Name"/>
+                        <br>
+                        <label for="lastname">Last Name: </label> 
+                        <input type="text" name="lastname" placeholder="Enter your Last Name"/>
+                        <br>
                         <label for="phone#">Phone#: </label>
-                        <input id="phone#" name="phone#" placeholder="Enter your Phone#"/>                       
-                    </fieldset>
-                   
-                    <fieldset>     
+                        <input type="text" name="phone#" placeholder="Enter your Phone#"/>  
+                        <br>
                         <label for="email">E-Mail: </label>      
-                        <input id="email" name="email" placeholder="Enter your E-Mail"/>                       
-                    </fieldset>
-                    
-                    
-                   
-                    <fieldset>
+                        <input type="email" name="email" placeholder="Enter your E-Mail"/>
+                        <br>
                         <label for="comment">Comment: </label><br>
-                        <textarea id="comment" name="comment" rows="10">Tell us about yourself...</textarea>
-                    </fieldset>
-                        
-                        
-                    <input type="submit" value="Send" alt="Send">
-                    
-                        
-                    
-                    
-                    
-                    
-                    
-                    
+                        <textarea name="comment" rows="10" placeholder="Tell us about yourself..."></textarea>
+                        <br>
+                        <input type="submit" value="Send" alt="Send">
+                    </div>
                     
                     <div style="display:none" class="thankyou_message">
+                        <hr>
                         <h2>Thank you for taking the time to fill out this form. We appreciate your desire to help build a stronger community and workforce. We will review your infomation and contact you as soon as possible.</h2>
+                        <hr>
                     </div>
                      
                 </form>

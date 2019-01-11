@@ -258,7 +258,7 @@ footer {
 /********************* Volunteer *********************/
 
     
-#emailform input[type=text], select {
+.volunteerform input[type=text], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -270,7 +270,7 @@ footer {
 }
 
     
-#emailform input[type=submit] {
+.volunteerform input[type=submit] {
     width: 25%;
     background-color: #00112d;
     color: white;
@@ -281,18 +281,18 @@ footer {
 }
 
     
-#emailform input[type=submit]:hover {
+.volunteerform input[type=submit]:hover {
     background-color: #001f54;
 }
 
     
-#emailform {
+.volunteerform {
     border-radius: 5px;
     padding: 20px;   
 }
 
     
-#emailform input[type=email], select {
+.volunteerform input[type=email], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -303,7 +303,7 @@ footer {
     font-size: 20px;
 }
 
-#emailform textarea {
+.volunteerform textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
