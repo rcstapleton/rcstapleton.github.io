@@ -68,3 +68,8 @@ function submitWin()
 {
   location.href = "thankyousubmit.html";
 }
+
+function thankYouMsg() {
+    document.getElementById("thankyou").style.display = "block";
+    location.href = "#a1";
+}

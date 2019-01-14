@@ -69,12 +69,16 @@
                 <h1>Together, WE are Stronger!</h1>  
                 <br>
                 <hr>
-                <h1>Volunteer Form</h1>
+                <h1 id="a1">Volunteer Form</h1>
                 <hr>
-                
-                <!--
-https://script.google.com/macros/s/AKfycbw38ahY8TZjENrGLNKroyrHBdT6GowCOTQmHD6vI8mLDLcLPN4/exec
--->
+
+                <div style="display:none" id="thankyou">
+                    <h2>Thank you for taking the time to fill out this form. We appreciate your desire to help build a stronger community and workforce. We will 
+                        review your infomation and contact you as soon as possible.</h2>
+                    <hr>
+                    <p>All information submitted will be used strictly for Hamblen County Literacy Council volunteer purposes and will not be shared with outside 
+                        parties.</p>
+                </div>
                 
                 <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbw38ahY8TZjENrGLNKroyrHBdT6GowCOTQmHD6vI8mLDLcLPN4/exec" onsubmit="this.style.visibility='hidden';">
  
@@ -94,7 +98,7 @@ https://script.google.com/macros/s/AKfycbw38ahY8TZjENrGLNKroyrHBdT6GowCOTQmHD6vI
                         <label for="comment">Comment: </label><br>
                         <textarea name="comment" rows="10" placeholder="Tell us about yourself and why you are interested in volunteering."></textarea>
                         <br>
-                        <input type="submit" value="Send" alt="Send">
+                        <input type="submit" value="Send" alt="Send" onclick="thankYouMsg()">
                     </div>  
                 </form>
                 <br>
@@ -105,7 +109,7 @@ https://script.google.com/macros/s/AKfycbw38ahY8TZjENrGLNKroyrHBdT6GowCOTQmHD6vI
                 <br>
                 <br>
                 <br>
-                <br>
+                <br>             
             </div>
             
             <!--stop email redirect-->
