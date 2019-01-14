@@ -61,3 +61,10 @@ function openWin()
 {
   window.open("https://www.paypal.com/us/home");
 }
+
+
+/****************Volunteer*************************/
+function submitWin()
+{
+  location.href = "thankyousubmit.html";
+}

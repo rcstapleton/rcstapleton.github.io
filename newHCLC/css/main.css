@@ -202,7 +202,7 @@ footer {
 .right-img
 {
     float: right;
-    height: 250px;
+    height: 300px;
     padding-right: 1%;
     padding-top: 0%;
 }
@@ -210,12 +210,12 @@ footer {
 .right-img img
 {
     float: right;
-    height: 250px;
+    height: 300px;
     width: 225px;
     border-radius: 25px;
     border: 1px solid black;
     overflow: hidden;
-    
+    margin-left: 5px
 }
 
 .bio h3, p
