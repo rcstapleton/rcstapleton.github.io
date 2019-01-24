@@ -1,5 +1,5 @@
 /********************* News Slide *********************/
-var slideIndex = 1;
+var slideIndex = 0;
 
 function plusSlides(n)
 {
@@ -46,7 +46,7 @@ function carousel()
         slideIndex = 1
     } 
     x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 8000); 
+    setTimeout(carousel, 6000); 
   
     for (i = 0; i < dots.length; i++)
     {
