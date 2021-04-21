@@ -42,7 +42,7 @@ hr {
 #right-pane {
     float: right; /* floats the pane to the right */
     width: 85%; /* sets the width of the pane */
-    background: url(/art/backgrounds/mainbackground2.jpg) no-repeat center center fixed;
+    background: url(../art/backgrounds/mainbackground2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
