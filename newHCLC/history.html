@@ -10,9 +10,17 @@
 	<meta name="author" content="HCLC">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Hamblen County Literacy Council History" />
-    <meta name="keywords" content="Hamblen County Literacy Council, HCLC, HCLC, inc, Literacy Council" />
+    <meta name="keywords" content="Hamblen County Literacy Council History" />
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="scripts/main.js" ></script> 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        nav a.historyactive, div a.historyactive
+        {
+            background-color: #001f54; /* sets the background color of the active lnk */
+            color: white; /* sets the color of the active link */
+        }
+    </style>
 </head>
 <body>
 
@@ -27,19 +35,13 @@
             <img src="art/images/hamblen2.png" alt="HCLC Icon">
             </div>
             
-            <!--Nav Bar-->
-            <nav>
-              <h2>Navigation Menu</h2>
-                <a href="index.html">Home</a>
-                <a href="news.html">News</a>
-                <a href="history.html" class="active">History</a>
-                <a href="leadership.html">Leadership</a>
-                <a href="services.html">Services</a>
-                <a href="volunteer.html">Volunteer</a>
-                <a href="donate.html">Donate</a>
-                <a href="contact.html">Contact</a>
-                <a href="links.html">Links</a>
-            </nav>       
+            <!--FullScreen Navbar-->
+            <div id="navbarstatic">
+            </div>
+            <script>
+                $(function(){$("#navbarstatic").load("components/navbar.html");});
+            </script>
+            <!--end of Navigation bar-->    
             
         </div>
         
@@ -47,7 +49,17 @@
         <div id="right-pane">
 
             <!--Banner-->
-            <div id="banner"><h1>History</h1></div>
+            <div id="banner">
+
+                <!--Mobile Navbar-->
+                <div id="navbarmobile">
+                </div>                            
+                <script>                                            
+                    $(function(){$("#navbarmobile").load("components/navbarmobile.html");});         
+                </script>
+                <!--end of Navigation bar-->
+                <h1>History</h1>
+            </div>
             
             <!--Content-->
             <div id="content">
@@ -84,12 +96,13 @@
                 <br>
                 <br>
                 <br>
-                
+                <br>
+                <br>
             </div>
             
             <!--Footer-->
             <footer>
-                Last updated 1/1/2019
+                Last updated 1/24/2019
             </footer>
         </div>
     </div>

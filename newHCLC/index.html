@@ -6,19 +6,28 @@
 		Date:				1/1/2019
 	-->
 	<meta charset="utf-8">
-    <title>Literacy Council Home</title>  
+    <title>Literacy Council Home</title> 
+    <meta name="google-site-verification" content="iCSl29WTIJ-xMy8oICLh_u1BVFBJE6vbrDqqEqqZzNE" />
 	<meta name="author" content="HCLC">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Hamblen County Literacy Council Home" />
-    <meta name="keywords" content="Hamblen County Literacy Council, HCLC, HCLC, inc, Literacy Council" />
+    <meta name="keywords" content="Hamblen County Literacy Council, HCLC, HCLC inc, Literacy Council, literacy council home, Hamblen County Literacy Council home, HCLC home, Hamblen Literacy, Hamblen Council" />
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="scripts/main.js" ></script> 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        nav a.indexactive, div a.indexactive
+        {
+            background-color: #001f54; /* sets the background color of the active lnk */
+            color: white; /* sets the color of the active link */
+        }
+    </style>
 </head>
 <body>
 
     <!--Main Div-->
     <div id="main">
-        
+  
         <!--Left-Pane-->
         <div id="left-pane">
         
@@ -27,19 +36,13 @@
             <img src="art/images/hamblen2.png" alt="HCLC Icon">
             </div>
             
-            <!--Nav Bar-->
-            <nav>
-              <h2>Navigation Menu</h2>
-                <a href="index.html" class="active">Home</a>
-                <a href="news.html">News</a>
-                <a href="history.html">History</a>
-                <a href="leadership.html">Leadership</a>
-                <a href="services.html">Services</a>
-                <a href="volunteer.html">Volunteer</a>
-                <a href="donate.html">Donate</a>
-                <a href="contact.html">Contact</a>
-                <a href="links.html">Links</a>
-            </nav>       
+            <!--FullScreen Navbar-->
+            <div id="navbarstatic">
+            </div>
+            <script>
+                $(function(){$("#navbarstatic").load("components/navbar.html");});
+            </script>
+            <!--end of Navigation bar-->    
             
         </div>
         
@@ -47,31 +50,36 @@
         <div id="right-pane">
 
             <!--Banner-->
-            <div id="banner"><h1>Home</h1></div>
+            <div id="banner">
+
+                <!--Mobile Navbar-->
+                <div id="navbarmobile">
+                </div>                            
+                <script>                                            
+                    $(function(){$("#navbarmobile").load("components/navbarmobile.html");});         
+                </script>
+                <!--end of Navigation bar-->
+                <h1>Home</h1>
+            </div>
             
             <!--Content-->
             <div id="content">
-                
-                
-                
-                
-                
                 
                 <!--News-->
                 <div class="slideshow-container">
                     <!-- 1 -->
                     <div class="mySlides">
-                        <p>Upcoming event 1</p>
+                        <p>Freddy's Fundraiser for Hamblen County Literacy Council on 4/15, at Freddy's Morristown location from 5-9pm.</p>
                     </div>
 
                     <!-- 2 -->
                     <div class="mySlides">
-                        <p>The next two meetings will take place at the Career Center on January 14th and 28th at 5:30pm.</p>
+                        <p>Bronze Pillar Champions<br>Jim Whitbeck, Dr. Cindy Perry and Cherokee Health Systems</p>
                     </div>
 
                     <!-- 3 -->
-                    <div class="mySlides">
-                        <p>Upcoming event 3</p>
+                    <div class="mySlides">                       
+                        <p>Volunteer Tutor Recognition<br>Sally Tomat, Awarded Outstanding Volunteer and Tutor 2018.</p>
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -88,24 +96,24 @@
                     carousel();
                 </script>
    
-                <h1 class="rainbow">Welcome to <br>the Hamblen County Literacy Council Home Page</h1>
+                <h1 class="rainbow">Welcome to <br> Hamblen County Literacy Council</h1>
                 <img id="img-logo" src="art/images/hamblen2.png" alt="HCLC">
                 
                 
                 
-                <h2>(HCLC)</h2>
-                <h3>Partnering with Hamblen County Adult Education and the Local Workforce Development System</h3>
+                <h2>(HCLC, Inc.)</h2>
+                <h3>Partnering with Hamblen County Adult Education and <br> the Local Workforce Development System</h3>
+                <hr>
+                <h2>Freddy's Fundraiser!</h2>
+                <hr>
+                <img style="width: 40%"  class="home-img" src="art/promotions/freddysfundraiser.png" alt="gallery Image"> 
+                <br>
                 <br>
                 <hr>
-                <h2>Information</h2>
+                <h2>Together, we are Stronger</h2>
                 <hr>
-                <p>This website contains various information about the Hamblen County Literacy Council.<br><br>  
-                    
-                You can find such information as current and archived news articles about our events. You can also read about our history, leadership and the services we offer to the community.<br><br>
-                    
-                if you are looking to volunteer for the Hamblen County Literacy Council, we have a page dedicated to getting in touch with Council leadership.We also have a page for accepting charitable donations.<br>
-                Last but not least, we have a page with our contact information and a page with various helpful links.<br><br>
-                Once again welcome to our page, and feel free to look around.</p>
+                <img class="home-img" src="art/gallery/galleryimage01.jpg" alt="gallery Image"> 
+                <br>           
                 <br>
                 <br>
                 <br>
@@ -113,11 +121,14 @@
                 <br>
                 <br>
                 <br>
+                <br>
+                <br>
+                <h3>Let's Partner. Link to Our Website at<br>hamblenliteracy.github.io</h3>
             </div>
             
             <!--Footer-->
             <footer>
-                Last updated 1/1/2019
+                Last updated 2/21/2019
             </footer>
         </div>
     </div>

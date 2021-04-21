@@ -46,7 +46,7 @@ function carousel()
         slideIndex = 1
     } 
     x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 6000); 
+    setTimeout(carousel, 20000); 
   
     for (i = 0; i < dots.length; i++)
     {
@@ -72,4 +72,13 @@ function submitWin()
 function thankYouMsg() {
     document.getElementById("thankyou").style.display = "block";
     location.href = "#a1";
+}
+
+/********************* responsive navbar *********************/
+                
+function openNav() {                   
+    document.getElementById("mySidenav").style.width = "40%";               
+}               
+function closeNav() {                 
+    document.getElementById("mySidenav").style.width = "0";                  
 }

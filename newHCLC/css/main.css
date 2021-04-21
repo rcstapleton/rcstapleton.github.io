@@ -6,7 +6,7 @@
 html, body { 
     
     margin: 0; 
-    padding: 0; 
+    padding: 0;
     height: 100%; 
     width: 100%; 
     background-color: black;
@@ -27,7 +27,7 @@ hr {
     border-style: inset;
     border-width: 1px;
     border-color: black;
-} 
+}
 
 #left-pane {
     float: left; /* floats the pane to the left */
@@ -42,29 +42,40 @@ hr {
 #right-pane {
     float: right; /* floats the pane to the right */
     width: 85%; /* sets the width of the pane */
-    height: 100%; /* sets the height of the pane */
-    overflow: hidden; /* Sets the overflow to hidden */
-    background: url(../art/backgrounds/mainbackground2.jpg) no-repeat center center fixed;
+    background: url(/art/backgrounds/mainbackground2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-color: #cccccc;
-	background-size: cover;
-	-webkit-background-size: cover;
+    padding-right: 4px;
+    overflow: inherit;
+
 }
 
 #banner {
     text-align: center; /* centers the text in the banner */
-    background: rgba(10, 10, 40, 0.97);
+    background: rgba(10, 10, 40, 1.0);
     width: 100%; /* sets the width of the banner */
     margin-top: -25px; /* changes the margin of the banner to make it fit at the top */
     border-radius: 20px; /* sets a border radius for the banner */
     border: 2px solid black; /* sets border for the banner*/
-    height: 70px
+    height: 70px;
     
 }
 
 #banner h1 {
     margin-top: 27px; /* sets a margin for the h1 in the banner so it fits better */
     color: white; /* sets the banner text h1 color */
-    text-align:
+    padding-right: 80px;
+}
+
+#banner p{
+    float: left;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 0;
+    visibility: hidden;
 }
 
 
@@ -90,9 +101,6 @@ hr {
     background: url(../art/backgrounds/scrollbackground1.jpg) no-repeat center center fixed;
     background-color: #cccccc;
 	background-size: cover;
-	-webkit-background-size: cover;
-    min-height: 100%;
-    height: 100%; 
 }
 
 #content p {
@@ -115,11 +123,6 @@ nav a {
     text-decoration: none; /* removes the lines from the nav bar text */
 }
 
-nav a.active {
-    background-color: #001f54; /* sets the background color of the active lnk */
-    color: white; /* sets the color of the active link */
-}
-
 nav a:hover:not(.active) {
     background-color: #001f54; /* sets the background color of the hover */
     color: white; /* sets the text color of the hover */
@@ -128,13 +131,14 @@ nav a:hover:not(.active) {
 footer {
     font-size: 20px; /* set the font size for the footer */
     width: 100%; /* sets the width of the footer */
-    background: rgba(10, 10, 40, 0.97);
+    background: rgba(10, 10, 40, 1.0);
     color: white; /* sets the text color of the footer */
     text-align: center; /* centers the text of the footer */
     border: 2px solid black; /* sets a border for the footer */
 }
 
 /********************* General *********************/
+
 
 .item-list
 {
@@ -271,7 +275,7 @@ footer {
 
     
 .volunteerform input[type=submit] {
-    width: 25%;
+    width: 20%;
     background-color: #00112d;
     color: white;
     padding: 14px 20px;
@@ -316,10 +320,18 @@ footer {
 
 /********************* Home *********************/
 
+.home-img
+{
+  background-color: #01183d;
+    width: 80%;
+    border-radius: 35px;
+    border: 10px solid #01183d;
+}
+
 #img-logo
 {
     background-color: #01183d;
-    width: 50%;
+    width: 40%;
     height: 200px;
     border-radius: 25px;
     padding: 20px;
@@ -329,7 +341,7 @@ footer {
 /* Slideshow container */
 .slideshow-container 
 {
-    background: rgba(10, 10, 40, 0.97);
+    background: rgba(10, 10, 40, 1.0);
     position: relative;
     width: 100.1%;
     float: none;
@@ -395,7 +407,7 @@ footer {
 /* The dot/bullet/indicator container */
 .dot-container
 {
-    min-width: 19%;
+    min-width: 25%;
     width: 12%;
     float: none;
     margin: auto;
@@ -428,6 +440,19 @@ footer {
     background-color: black;
 }
 
+
+/**********************Gallery**********************/
+
+.Gallery-img
+{
+    background-color: #01183d;
+    width: 80%;
+    border-radius: 20px;
+    border: 5px solid #01183d;
+}
+
+
+
 /********************* History *********************/
 
 #years30 p
@@ -444,11 +469,124 @@ footer {
 
 .posted
 {
-    font-size: 20px;
+    font-size: 12px;
     font-weight: bold;
-    padding-right: 63%;
-    text-align: center;
+    padding-right: 81%;
 }
 
-/********************* 3 *********************/
+.headerLine
+{
+    height: 5px;
+    background-color: black;
+}
 
+.news-img
+{
+  background-color: #01183d;
+    width: 40%;
+    height: 700px;
+    border-radius: 35px;
+    border: 10px solid #01183d;
+}
+
+/********************* responsive navbar *********************/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(10, 10, 40, 1.0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 30px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: lightgray; /* sets the nav bar links text color */
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: #001f54; /* sets the background color of the hover */
+    color: white; /* sets the text color of the hover */
+    
+}
+
+.sidenav a.active {
+    background-color: #001f54; /* sets the background color of the active lnk */
+    color: white; /* sets the color of the active link */
+}
+
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px)
+{
+    .sidenav
+    {
+        padding-top: 15px;
+    }
+    .sidenav a 
+    {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .sidenav a 
+    {
+        font-size: 18px;
+    }
+}
+
+/********************* Responsive *********************/
+
+@media screen and (max-width: 950px) 
+{
+    #left-pane
+    {
+        width: 0%; /* sets the width of the pane */
+    }
+    
+    #right-pane
+    {
+        width: 100%; /* sets the width of the pane */
+        background: url(/art/backgrounds/mainbackground2.jpg) repeat center center;
+    }
+    
+    #content
+    {
+        width: 80%; /* sets the width of the pane */
+        margin-left: 10%; /* sets the margin for the content to get it midscreen */
+        background: url(../art/backgrounds/scrollbackground1.jpg) repeat center center;
+    }
+    
+    #banner p
+    {
+        visibility: visible;
+    }
+    
+    .slideshow-container{     
+        max-height: 200px; 
+        min-height: 200px;
+    }
+    
+    #content a { 
+        font-size: 85%;
+    }
+}
